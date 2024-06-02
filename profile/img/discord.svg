@@ -228,9 +228,9 @@
           margin-top: 40px;
         }
 
-        .card-body .profile-body .username {
+        .card-body .profile-body .displayname {
           color: #eeeeee;
-          margin-bottom: 13px;
+          margin-bottom: 0px;
           font-weight: 600;
           font-size: 1.3rem;
           display: flex;
@@ -238,13 +238,15 @@
           align-items: end;
         }
 
-        .card-body .profile-body .username span {
+        .card-body .profile-body .username {
           color: #b9bbbe;
           font-size: 0.8rem;
           font-weight: 400;
+          display: flex;
+          margin-bottom: 10px;
         }
 
-        .card-body .profile-body .username .badge {
+        .card-body .profile-body .displayname .badge {
           font-size: 0.65rem;
           background-color: #5865f2;
           text-transform: uppercase;
@@ -473,7 +475,8 @@
                 </div>
               </div>
               <div class="profile-body">
-                <div class="username">Charlie ✌️ <span>@onecrazygenius</span></div>
+                <div class="displayname">Charlie ✌️</div>
+                <span class="username">@onecrazygenius</span>
                 <hr />
                 <div class="btn-container">
                   <a href="https://onecrazygenius.com/" target="_blank" class="btn mr-10"
