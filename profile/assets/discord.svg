@@ -41,6 +41,7 @@
         body,
         html {
           height: 100%;
+          width: 100%;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -167,7 +168,7 @@
           top: -50px;
         }
 
-        .card-body .profile-header .profil-logo {
+        .card-body .profile-header .profile-logo {
           position: relative;
           border: 6px solid #292b2f;
           border-radius: 50%;
@@ -176,7 +177,7 @@
           overflow: hidden;
         }
 
-        .card-body .profile-header .profil-logo img {
+        .card-body .profile-header .profile-logo img {
           display: block;
           width: 100%;
         }
@@ -435,7 +436,7 @@
           margin-top: 20px;
         }
       </style>
-      <div class="container">
+      <body>
         <div class="card">
           <div class="card-header">
             <div class="banner-img" style="background-image: url('img/banner.gif');"></div>
@@ -443,19 +444,92 @@
           <div class="card-body">
             <div class="profile-header">
               <div class="profile-logo">
-                <img src="img/logo.jpeg" >
+                <!-- <img src=".img/logo.jpeg" > -->
               </div>
-              <div class="badge-container"></div>
+              <div class="badges-container">
+                <div class="badge-item">
+                  <img src="./img/badges/gear.svg" alt="" />
+                  <div class="tooltip tooltip-up">Web Developer</div>
+                </div>
+                <div class="badge-item">
+                  <img src="./img/badges/ui_uix.svg" alt="" />
+                  <div class="tooltip tooltip-up">UI/UX Designer</div>
+                </div>
+                <div class="badge-item">
+                  <img src="./img/badges/graph.svg" alt="" />
+                  <div class="tooltip tooltip-up">Graphic Designer</div>
+                </div>
+              </div>
             </div>
             <div class="profile-body">
-              <div class="username">
-                Charlie ✌🏻
-                <span>@onecrazygenius</span>
+              <div class="username">Charlie ✌️ <span>@onecrazygenius</span></div>
+              <hr />
+              <div class="btn-container">
+                <a href="https://onecrazygenius.com/" target="_blank" class="btn mr-10"
+                  >Website</a
+                >
+                <a
+                  href="https://github.com/onecrazygenius"
+                  target="_blank"
+                  class="btn btn-small"
+                >
+                  <img src="./assets/img/github.png" alt="" />
+                </a>
+              </div>
+              <div class="basic-infos">
+                <div class="category-title">About me</div>
+                <p>Content <b></b></p>
+              </div>
+              <div class="basic-infos">
+                <div class="category-title">Listen on Spotify</div>
+                <div id="spotify-container">
+                  <div class="spotify hidden">
+                    <div class="spotify-music-infos">
+                      <div class="music-cover">
+                        <img src="./assets/img/logo.jpeg" />
+                      </div>
+                      <div class="music-text">
+                        <div class="music-title">
+                          <b
+                            ><a href="https://onecrazygenius.com/" target="_blank">
+                              Title
+                            </a></b
+                          >
+                        </div>
+                        <div class="music-artist">
+                          by
+                          <a href="https://onecrazygenius.com/" target="_blank">
+                            Artist
+                          </a>
+                        </div>
+                        <div class="music-album">
+                          in
+                          <a href="https://onecrazygenius.com/" target="_blank">
+                            Album
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="spotify-music-tracker">
+                      <div class="music-tracker-container">
+                        <div class="music-tracker"></div>
+                      </div>
+                      <div class="timer">
+                        <span>0:00</span>
+                        <span style="color: #696969">Playing</span>
+                        <span>0:00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="spotify-listen-nothing">
+                    <div class="text">Nothing is playing right now</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </body>
     </div>
   </foreignObject>
 </svg>

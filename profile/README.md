@@ -1,3 +1,3 @@
-<div align="center">
-    <img width="100%" height="700" src="assets/discord.svg">
-</div>
+<body style="width: 100%; height: 100%">
+    <img style="width: 100%; height: 5000px" src="assets/discord.svg">
+</body>
