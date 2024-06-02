@@ -1,23 +1,7 @@
 <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <style>
-      @font-face {
-        font-family: "Whitney";
-        font-style: normal;
-        font-weight: normal;
-        src: local("Whitney"), url("public/assets/font/whitneymedium.woff") format("woff");
-      }
-    </style>
-  </defs>
   <foreignObject width="100%" height="100%">
     <div xmlns="http://www.w3.org/1999/xhtml">
       <style>
-        @font-face {
-          font-family: "Whitney";
-          font-style: normal;
-          font-weight: normal;
-          src: local("Whitney"), url("public/assets/font/whitneymedium.woff") format("woff");
-        }
         @keyframes visualizer {
           0% {
             transform: scaleY(1);
@@ -45,6 +29,15 @@
           display: flex;
           align-items: center;
           justify-content: center;
+        }
+
+        p {
+          display: block;
+          margin-block-start: 1em;
+          margin-block-end: 1em;
+          margin-inline-start: 0px;
+          margin-inline-end: 0px;
+          unicode-bidi: isolate;
         }
 
         .tooltip {
@@ -413,7 +406,6 @@
           width: 100%;
           height: 4px;
         }
-
         .card-body
           .profile-body
           .basic-infos
@@ -425,7 +417,6 @@
           height: 100%;
           border-radius: 7px;
         }
-
         .card-body .profile-body .basic-infos .spotify .spotify-music-tracker .timer {
           display: flex;
           flex-direction: row;
@@ -435,7 +426,6 @@
           font-size: 0.8rem;
           margin-top: 5px;
         }
-
         .card-body .profile-body .basic-infos .spotify-listen-nothing {
           display: flex;
           flex-direction: row;
@@ -446,6 +436,34 @@
           color: #999b9c;
           font-size: 0.9rem;
           margin-top: 20px;
+        }
+        .card-body .profile-body .roles .roles-list {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .card-body .profile-body .roles .roles-list .role {
+          background-color: rgba(24, 25, 28, 0.3);
+          border: 1px solid #3f4149;
+        }
+        .card-body .profile-body .roles .roles-list .role {
+          background: #292b2f;
+          color: #f5f5f5;
+          border-radius: 3px;
+          font-size: 0.75rem;
+          font-weight: 300;
+          padding: 0px 6px;
+          margin-right: 4px;
+          margin-top: 4px;
+          display: flex;
+          align-items: center;
+          flex-direction: row;
+        }
+        .card-body .profile-body .roles .roles-list .role .role-color {
+          position: relative;
+          width: 11px;
+          height: 11px;
+          border-radius: 50%;
+          margin-right: 5px;
         }
       </style>
       <body>
@@ -492,51 +510,53 @@
                 </div>
                 <div class="basic-infos">
                   <div class="category-title">About me</div>
-                  <p>Content <b></b></p>
+                  <p>
+                    <b>☀️ MLOps GitOps and DevOps Engineer</b>
+                    Git Cloud Containers I love to learn and will update a full list when I stop procastinating.
+                  </p>
                 </div>
                 <div class="basic-infos">
-                  <div class="category-title">Listen on Spotify</div>
-                  <div id="spotify-container">
-                    <div class="spotify hidden">
-                      <div class="spotify-music-infos">
-                        <div class="music-cover">
-                          <img src="./assets/img/logo.jpeg" />
-                        </div>
-                        <div class="music-text">
-                          <div class="music-title">
-                            <b
-                              ><a href="https://onecrazygenius.com/" target="_blank">
-                                Title
-                              </a></b
-                            >
-                          </div>
-                          <div class="music-artist">
-                            by
-                            <a href="https://onecrazygenius.com/" target="_blank">
-                              Artist
-                            </a>
-                          </div>
-                          <div class="music-album">
-                            in
-                            <a href="https://onecrazygenius.com/" target="_blank">
-                              Album
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="spotify-music-tracker">
-                        <div class="music-tracker-container">
-                          <div class="music-tracker"></div>
-                        </div>
-                        <div class="timer">
-                          <span>0:00</span>
-                          <span style="color: #696969">Playing</span>
-                          <span>0:00</span>
-                        </div>
-                      </div>
+                  <div class="category-title">Member Since</div>
+                  <p>Nov 11, 2021</p>
+                </div>
+                <div class="roles">
+                  <div class="category-title">Tools</div>
+                  <div class="roles-list">
+                    <div class="role">
+                      <div class="role-color" style="background: green"></div>
+                      <p>python 🐍</p>
                     </div>
-                    <div class="spotify-listen-nothing">
-                      <div class="text">Nothing is playing right now</div>
+                    <div class="role">
+                      <div class="role-color" style="background: yellow"></div>
+                      <p>ts/js ✨</p>
+                    </div>
+                    <div class="role">
+                      <div class="role-color" style="background: purple"></div>
+                      <p>php 💜</p>
+                    </div>
+                    <div class="role">
+                      <div class="role-color" style="background: lightblue"></div>
+                      <p>sql 🏢</p>
+                    </div>
+                    <div class="role">
+                      <div class="role-color" style="background: orange"></div>
+                      <p>shell stuff 🐢</p>
+                    </div>
+                    <div class="role">
+                      <div class="role-color" style="background: darkblue"></div>
+                      <p>c fam 👨🏻‍👩🏼‍👦🏻</p>
+                    </div>
+                    <div class="role">
+                      <div class="role-color" style="background: pink"></div>
+                      <p>lua 🪐</p>
+                    </div>
+                    <div class="role">
+                      <div class="role-color" style="background: red"></div>
+                      <p>elixir 🍷</p>
+                    </div>
+                    <div class="role">
+                      <div class="role-color" style="background: brown"></div>
+                      <p>java 😤</p>
                     </div>
                   </div>
                 </div>
