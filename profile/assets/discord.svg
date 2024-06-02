@@ -65,10 +65,10 @@
 
   <rect x="0" y="0" width="400" height="600" class="card" />
   
-  <image x="0" y="0" width="400" height="120" href="assets/img/banner.gif" />
+  <image x="0" y="0" width="400" height="120" href="img/banner.gif" />
 
   <circle cx="80" cy="150" r="40" class="profile-logo" />
-  <image x="40" y="110" width="80" height="80" href="assets/img/logo.jpeg" />
+  <image x="40" y="110" width="80" height="80" href="img/logo.jpeg" />
 
   <foreignObject x="140" y="130" width="120" height="30" class="badges-container">
     <div xmlns="http://www.w3.org/1999/xhtml">
