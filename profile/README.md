@@ -1,7 +1,3 @@
-# crazygeniuslabs
-
 <div align="center">
-    <a href="https://onecrazygenius.com" alt="onecrazygenius.com">
-        <img src="assets/discord.svg" width="auto" height="auto">
-	</a>
+    <img width="100%" height="700" src="assets/discord.svg">
 </div>
